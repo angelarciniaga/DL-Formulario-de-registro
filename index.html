@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form id="form-reserva">
+        <div>
+            <label for="rut">Rut</label>
+            <input type="text" id="rut">
+        </div>
+        <div>
+            <label for="nombres">Nombres</label>
+            <input type="text" id="nombres">
+        </div>
+        <div>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos">
+        </div>
+        <div>
+            <label for="edad">Edad</label>
+            <input type="text" id="edad" minlength="1" maxlength="2">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="correo@electronico.com">
+        </div>
+        <div>
+            <label for="especialidad">Especialidad</label>
+            <div>
+                <select name="especialidad" id="especialidad">Especialidad
+                    <option value="oftalmologia">Oftalmología</option>
+                    <option value="dental">Dental</option>
+                    <option value="medicina">Medicina General</option>
+                    <option value="dermatología">Dermatología</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <label for="fecha">Fecha</label>
+            <input type="text" id="fecha" placeholder="dd-mm-yyyy">
+        </div>
+        <div>
+            <label for="hora">Hora</label>
+            <div>
+                <select name="hora" id="hora">Hora
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                </select>
+            </div>
+        </div>
+        <div class="conten-center">
+            <button id="boton" type="submit">Reservar</button>
+        </div>
+    </form>
+    <script src="/script.js"></script>
+
+</body>
+</html>
